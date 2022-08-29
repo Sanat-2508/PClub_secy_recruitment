@@ -8,7 +8,7 @@ int random_number_generator(int l, int r){
         int t=l; l=r; r=t;
     }
     int temp=rand();
-    return(r+(temp)%(r-l%1));
+    return(r+(temp)%(r-l+1));
 }
 
 int main()
